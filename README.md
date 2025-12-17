@@ -118,5 +118,5 @@ Q₂ = (klaWeight + gasHoldUpWeight) / 2 × Q₁ × (V₂/V₁)
 
 ## 📄 License
 
-This project is intended for educational and research purposes. Please ensure compliance with your institution's policies when using for commercial applications.
+This project is intended for educational and research purposes only.
 
