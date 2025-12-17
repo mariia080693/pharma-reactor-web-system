@@ -1,6 +1,9 @@
 # 🧪 Bioreactor Scaling Up Tool
 
-A web-based interactive tool for scaling bioprocess parameters between different bioreactor sizes using established bioprocess engineering principles.
+Live demo:
+http://bioreactor-scaling-tool.s3-website-us-west-2.amazonaws.com
+
+A web-based interactive tool for scaling key bioprocess parameters across bioreactor sizes using established bioprocess engineering principles.
 
 ## 📋 Overview
 
@@ -31,11 +34,6 @@ This tool helps bioprocess engineers and researchers scale up their bioprocesses
 - **Gas Hold Up**
 - **Kolmogorov Scale**
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional software installation required
 
 ### Installation
 1. Download or clone the project files
@@ -96,82 +94,6 @@ Q₂ = (klaWeight + gasHoldUpWeight) / 2 × Q₁ × (V₂/V₁)
 - **CSS3** - Modern styling with gradients and animations
 - **Vanilla JavaScript** - Interactive functionality and calculations
 
-### **Browser Compatibility**
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-### **Responsive Design**
-- Desktop-first approach
-- Tablet and mobile optimized layouts
-- Touch-friendly controls
-
-## 📱 User Interface
-
-### **Design Features**
-- **Dark Theme** with blue and gold accents
-- **Interactive Sliders** with real-time value updates
-- **Hover Effects** and smooth animations
-- **Dynamic Content** that updates based on selections
-- **Visual Feedback** for all user interactions
-
-### **Color Scheme**
-- **Primary**: Blue theme (#64b5f6, #42a5f5)
-- **Accent**: Gold (#ffd700, #ffb300)
-- **Background**: Dark gradients (#0f0f23, #1a1a2e, #16213e)
-- **Text**: Light gray (#e0e0e0, #b0bec5)
-
-## ⚡ Performance
-
-### **Optimizations**
-- **Minimal Dependencies** - No external libraries
-- **Efficient DOM Manipulation** - Direct element references
-- **CSS Transitions** - Hardware-accelerated animations
-- **Responsive Images** - Optimized for different screen sizes
-
-## 🔧 Configuration
-
-### **Reactor Parameters**
-All reactor specifications are defined in `script.js` in the `reactorConfigs` object:
-
-```javascript
-const reactorConfigs = {
-    source: {
-        Sartorius_250mL: {
-            volume: 0.25,  // L
-            maxSpeed: 4500,  // RPM
-            workingVolumeRange: { min: 0.1, max: 0.25 },  // L
-            stirrerSpeedRange: { min: 100, max: 4500 },   // RPM
-            gasFlowRateRange: { min: 0.01, max: 1.0 }     // vvm
-        }
-        // ... other reactors
-    }
-};
-```
-
-### **Safety Limits**
-- **Minimum Stirrer Speed**: 20 RPM
-- **Maximum Gas Flow Rate**: 5.0 vvm
-- **Minimum Gas Flow Rate**: 0.1 vvm
-
-## 🧪 Use Cases
-
-### **Research & Development**
-- Laboratory to pilot scale transitions
-- Process optimization studies
-- Parameter screening
-
-### **Manufacturing**
-- Production scale-up planning
-- Technology transfer
-- Process validation
-
-### **Education**
-- Bioprocess engineering teaching
-- Scale-up principle demonstration
-- Interactive learning tool
-
 ## 📊 Example Calculations
 
 ### **Scaling from 250mL to 5L (20x scale-up)**
@@ -198,22 +120,3 @@ const reactorConfigs = {
 
 This project is intended for educational and research purposes. Please ensure compliance with your institution's policies when using for commercial applications.
 
-## 🙏 Acknowledgments
-
-- **Bioprocess Engineering Principles** from various academic sources
-- **Modern Web Design** practices and responsive design principles
-- **User Experience** considerations for scientific applications
-
-## 📞 Support
-
-For questions about bioprocess engineering principles or technical issues, please refer to:
-- Bioprocess engineering textbooks for theoretical background
-- Web browser documentation for technical issues
-- The code comments for implementation details
-
----
-
-**Version**: 1.0  
-**Last Updated**: July 2025  
-**Compatibility**: Modern web browsers  
-**Status**: Production ready
